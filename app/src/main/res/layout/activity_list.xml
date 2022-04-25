@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ListActivity">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-38dp"
+            tools:layout_editor_absoluteY="-47dp"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_weight="1"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:text="" />
+                <requestFocus />
+
+                <Button
+                    android:id="@+id/buttonExit"
+                    android:layout_width="@dimen/buttonLayoutWidth"
+                    android:layout_height="@dimen/buttonLayoutHeight"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:onClick="onClickExit"
+                    android:text="@string/buttonSearch" />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listUserView"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+                app:layout_constraintTop_toBottomOf="@id/buttonExit"
+                app:layout_constraintBottom_toTopOf="@id/buttonNext" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/buttonPreview"
+                    android:layout_width="@dimen/buttonLayoutWidth"
+                    android:layout_height="@dimen/buttonLayoutHeight"
+                    android:layout_marginStart="@dimen/marginStart"
+                    android:layout_marginEnd="@dimen/marginEnd"
+
+                    android:layout_weight="1"
+                    android:onClick="onClickPreview"
+                    android:text="@string/buttonPreview"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/buttonNext"
+                    android:layout_width="@dimen/buttonLayoutWidth"
+                    android:layout_height="@dimen/buttonLayoutHeight"
+                    android:layout_marginStart="@dimen/marginStart"
+                    android:layout_marginEnd="@dimen/marginEnd"
+                    android:layout_weight="1"
+                    android:onClick="onClickNext"
+                    android:text="@string/buttonNext"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

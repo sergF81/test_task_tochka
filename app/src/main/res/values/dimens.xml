@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fontSizeGeneralText">25sp</dimen>
+    <dimen name="fontSizeText">20sp</dimen>
+    <dimen name="marginLeft">5dp</dimen>
+    <dimen name="marginTop">10dp</dimen>
+    <dimen name="buttonLayoutWidth">120dp</dimen>
+    <dimen name="buttonLayoutHeight">50dp</dimen>
+    <dimen name="marginStart">40dp</dimen>
+    <dimen name="marginEnd">40dp</dimen>
+</resources>

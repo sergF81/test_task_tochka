@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CIA_terminal</string>
+    <string name="buttonSearch">Exit</string>
+    <string name="buttonNext">next</string>
+    <string name="buttonReturn">Return</string>
+    <string name="buttonPreview">Preview</string>
+    <string name="buttonStart">Start</string>
+    <string name="buttonSignIn">Sign In</string>
+    <string name="textViewLogin">Login: </string>
+    <string name="textViewGeneral">General Info about subject:</string>
+    <string name="textViewId">ID: </string>
+    <string name="textViewAvatar">Avatar: </string>
+    <string name="textName">Name: </string>
+    <string name="textEmail">Email: </string>
+
+
+</resources>
